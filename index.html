@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nedos Agrotech Pvt Ltd</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     
+    <style>
+        /* CSS styles for background animation */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-image: linear-gradient(to right,darkgreen,green,lightgreen);
+            color: #fff;
+            padding: 2px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        /* New styles for navigation */
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+        .nav-container {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 4px;
+            margin-right: 20px;
+        }
+        
+        .nav-container:last-child {
+            margin-right: 0;
+        }
+        
+        /* Adjust the spacing between navigation links */
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .company-name {
+            flex: 1;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main h2 {
+            text-align: center;
+            font-size: 32px;
+            color: green;
+            text-shadow: 2px 2px 8px lightgreen;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            opacity: 0.95;
+        }
+
+        .mobile-menu-icon {
+            display: none;
+        }
+
+        /* Additional styles for responsiveness */
+        @media (max-width: 1200px) {
+            .team-member {
+                width: 180px;
+            }
+            .team-member img {
+                width: 180px;
+                height: 180px;
+            }
+            main h2 {
+                font-size: 36px;
+                color: black;
+            }
+            .team-member p {
+                font-size: 22px;
+            }
+            .team-member span {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-icon {
+                display: block;
+            }
+
+            /* Show the mobile menu icon (hamburger icon) */
+            .mobile-menu-icon {
+                display: block;
+                cursor: pointer;
+            }
+
+            /* Updated styles to show the entire navigation menu */
+            .nav-links.show {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 10px;
+                background-color: green;
+                border-radius: 4px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                z-index: 1;
+            }
+
+            .nav-links.show li {
+                margin-right: 0;
+                background-color: green;
+                margin-bottom: 10px;
+            }
+
+            .nav-links.show a {
+                color: #fff;
+                padding: 10px;
+                display: block;
+                z-index: 1;
+            }
+
+            /* Show the hamburger icon only in mobile view */
+            .mobile-menu-icon {
+                display: block;
+            }
+
+            .header-container {
+                display: none;
+            }
+
+            /* Change the color of h2 elements to black */
+            main h2 {
+                font-size: 36px;
+                color: green;
+            }
+
+            /* ... (existing styles) ... */
+        }
+
+        
+        /* Styling for the footer */
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .footer-address {
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="company-name">
+                    <h1>NEDOS AGROTECH</h1>
+                </div>
+                <nav>
+                    <div class="mobile-menu-icon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul class="nav-links">
+                        <a href="index.html">
+                            <div class="nav-container"></div>
+                            Home
+                        </a>
+                        <a href="about.html">
+                            <div class="nav-container"></div>
+                            About Us
+                        </a>
+                        <a href="services.html">
+                            <div class="nav-container"></div>
+                            Our Services
+                        </a>
+                        <a href="team.html">
+                            <div class="nav-container"></div>
+                            Our Team
+                        </a>
+                        <a href="contact.html">
+                            <div class="nav-container"></div>
+                            Contact Us
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content section (as in the original code) -->
+    <main>
+        <div class="container">
+            <h2>Empowering Rural Communities</h2>
+            <p>
+                We are a pioneering enterprise committed to fostering economic development and empowerment in rural areas. Our mission is to establish mini food processing industries in villages and rural regions, transforming farmers and rural youth into successful entrepreneurs. Through our dedicated efforts, we aim to provide access to modern food processing machinery, facilitate output marketing, offer efficient transport services, and extend comprehensive support in the food processing sector.
+            </p>
+            <h2>About Us</h2>
+            <p>
+                At our company, we believe in the transformative power of food
+                processing to create sustainable livelihoods and uplift rural
+                communities. By introducing modern food processing machinery and
+                techniques,<a href="about.html">know more...</a>
+            </p>
+            <h2>Our Services</h2>
+            <p>
+                High-Quality Food Processing Machinery: We offer a wide range of state-of-the-art food processing machineries suitable for various applications. Our machinery is designed to optimize efficiency, minimize waste, and maintain product integrity.
+
+                Entrepreneurship Development: Through comprehensive training and workshops, we equip farmers and rural youth with the skills and knowledge required to excel in the food processing industry. We instill business acumen, marketing strategies, and best practices for sustainable growth.<a href="services.html">know more...</a>
+            </p>
+
+        </div>
+    </main>
+
+    <!-- Footer section with black background and adjusted content arrangement -->
+    <footer class="footer" style="background-color: #000;">
+        <div class="container">
+            <p class="footer-links">
+                <a href="index.html">Home</a> |
+                <a href="about.html">About Us</a> |
+                <a href="services.html">Our Services</a> |
+                <a href="team.html">Our Team</a> |
+                <a href="contact.html">Contact Us</a>
+            </p>
+            <p class="footer-address">
+                1-1, PLN Complex, Opp: Appex Construction, Bellary Bypass, Ananthapur, Andhrapradhesh, Pincode: 515004
+            </p>
+            <!-- Social Media Links (in footer) -->
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100091757307005&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/p/Cs7wDw6yycQ/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/nedos-agrotech-private-limited/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="footer-copyright">
+                © 2023 Nedos Agrotech Pvt Ltd. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to toggle mobile menu
+        document.addEventListener("DOMContentLoaded", () => {
+            const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
+            const navLinks = document.querySelector(".nav-links");
+
+            mobileMenuIcon.addEventListener("click", () => {
+                navLinks.classList.toggle("show");
+            });
+        });
+    </script>
+    <script>
+        // JavaScript for smooth scrolling on navigation links
+        document.addEventListener("DOMContentLoaded", () => {
+            const navLinks = document.querySelectorAll("nav ul li a");
+
+            navLinks.forEach((link) => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(link.getAttribute("href"));
+                    target.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+
+        // JavaScript for dynamic background animation
+        document.addEventListener("DOMContentLoaded", () => {
+            const bgElement = document.querySelector("body");
+            bgElement.style.animation = "bgAnimation 20s infinite alternate";
+        });
+
+        // JavaScript for scroll fade animations
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll(".team-member");
+
+            const fadeInUp = (element) => {
+                const scrollPosition = window.scrollY;
+                const elementPosition = element.offsetTop;
+                const windowHeight = window.innerHeight;
+
+                if (scrollPosition > elementPosition - windowHeight + 100) {
+                    element.style.animation = "fadeInUp 1s forwards";
+                }
+            };
+
+            window.addEventListener("scroll", () => {
+                elements.forEach((element, index) => {
+                    fadeInUp(element);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

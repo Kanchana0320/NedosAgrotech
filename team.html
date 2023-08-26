@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Nedos Agrotech Pvt Ltd</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-image: linear-gradient(to right,darkgreen,green,lightgreen);
+            color: #fff;
+           
+            padding: 2px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        /* New styles for navigation */
+       
+         
+        .company-name {
+            flex: 1;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+        
+        .nav-links li {
+            margin-right: 20px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .nav-container {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 4px;
+            margin-right: 20px; /* Add space between containers */
+        }
+        
+        .nav-container:last-child {
+            margin-right: 0; /* Remove margin from the last container */
+        }
+        
+        /* Adjust the spacing between navigation links */
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+
+
+        main {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #f1c40f;
+            letter-spacing: 2px;
+        }
+
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .team-member {
+            text-align: center;
+            margin: 20px;
+            width: 220px;
+            opacity: 0;
+            animation: fadeInUp 1s forwards;
+        }
+
+        .team-member img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .team-member p {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #e74c3c;
+            letter-spacing: 1px;
+        }
+
+        .team-member span {
+            font-size: 18px;
+            color: #3498db;
+            letter-spacing: 1px;
+        }
+        
+        /* New styles for navigation */
+       
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+        
+        .company-name {
+            flex: 1;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+        
+        .nav-links li {
+            margin-right: 20px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+
+        /* Show the hamburger icon only in mobile view */
+        .mobile-menu-icon {
+            display: none;
+        }
+
+        /* High-level media query for responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 10px;
+                background-color: #3498db;
+                border-radius: 4px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                padding: 10px; /* Reduce padding for the container */
+            }
+        
+            .nav-links.show {
+                display: flex;
+                background-color: green;
+                 top: 60px;
+                right: 10px;
+                border-radius: 4px;
+                flex-direction: column;
+                position: absolute;
+            }
+        
+            .nav-links li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        
+            .nav-links a {
+                color: #fff;
+                padding: 10px;
+                display: block;
+            }
+            
+            /* Style the individual navigation items for better spacing */
+            .nav-links a {
+                margin: 0; /* Reset margin for individual links */
+                padding: 10px 20px; /* Adjust padding for individual links */
+            }
+        }
+            header {
+                padding: 10px 0;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            main h2 {
+                font-size: 26px;
+            }
+
+            .team-member {
+                width: 100%;
+            }
+            .mobile-menu-icon {
+                display: none;
+            }
+    
+            /* High-level media query for responsiveness */
+            @media (max-width: 768px) {
+                header h1 {
+                    font-size: 20px;
+                    text-align: center;
+                }
+                /* Adjust position and overlay for mobile navigation */
+                .nav-links {
+                    display: none;
+                    flex-direction: column;
+                    position: absolute; /* Use "absolute" to overlay on the first image */
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    background-color: #3498db;
+                    border-radius: 4px;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                    z-index: 2; /* Set a higher z-index to make it overlay */
+                    padding: 10px;
+                }
+            
+                /* Display the mobile navigation when active */
+                .nav-links.show {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            
+                /* Make the container size smaller */
+                .container {
+                    max-width: 90%; /* Adjust the percentage as needed */
+                }
+            
+                .nav-links li {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+            
+                .nav-links a {
+                    color: #fff;
+                    padding: 10px;
+                    display: block;
+                }
+            
+                /* Style the individual navigation items for better spacing */
+                .nav-links li a {
+                    margin: 5px;
+                }
+            
+                header {
+                    padding: 10px 0;
+                }
+    
+                .container {
+                    padding: 10px;
+                }
+    
+                main h2 {
+                    font-size: 26px;
+                }
+    
+                .team-member {
+                    width: 60px;
+                }
+    
+                /* Show the hamburger icon only in mobile view */
+                .mobile-menu-icon {
+                    display: block;
+                    cursor: pointer;
+                }
+    
+                /* Hide the desktop navigation links in the mobile view */
+                .nav-links {
+                    display: none;
+                }
+    
+                /* Hide the header background in mobile view */
+                .header-container {
+                    display: none;
+                }
+            }
+
+            header {
+                padding: 10px 0;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            main h2 {
+                font-size: 26px;
+            }
+
+            .team-member {
+                width: 100%;
+            }
+        
+
+
+        /* Rest of your styles */
+        /* Additional style for dynamic background animation */
+        @keyframes bgAnimation {
+            0% {
+                background-image: url("background.jpg");
+                background-position: center bottom;
+            }
+            100% {
+                
+                background-position: center top;
+            }
+        }
+
+        /* Additional style for fade-up animation */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Styling for the footer */
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .footer-address {
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        
+    </style>
+    <script>
+        // JavaScript for smooth scrolling on navigation links
+        document.addEventListener("DOMContentLoaded", () => {
+            const navLinks = document.querySelectorAll("nav ul li a");
+
+            navLinks.forEach((link) => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(link.getAttribute("href"));
+                    target.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+
+        // JavaScript for dynamic background animation
+        document.addEventListener("DOMContentLoaded", () => {
+            const bgElement = document.querySelector("body");
+            bgElement.style.animation = "bgAnimation 20s infinite alternate";
+        });
+
+        // JavaScript for scroll fade animations
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll(".team-member");
+
+            const fadeInUp = (element) => {
+                const scrollPosition = window.scrollY;
+                const elementPosition = element.offsetTop;
+                const windowHeight = window.innerHeight;
+
+                if (scrollPosition > elementPosition - windowHeight + 100) {
+                    element.style.animation = "fadeInUp 1s forwards";
+                }
+            };
+
+            window.addEventListener("scroll", () => {
+                elements.forEach((element, index) => {
+                    fadeInUp(element);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <div class="company-name">
+                        <h1 style="text-align: left;">NEDOS AGROTECH</h1>
+                    </div>
+                    <nav>
+                        <div class="mobile-menu-icon">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <ul class="nav-links">
+                            <a href="index.html">
+                                <div class="nav-container"></div>
+                                Home
+                            </a>
+                            <a href="about.html">
+                                <div class="nav-container"></div>
+                                About Us
+                            </a>
+                            <a href="services.html">
+                                <div class="nav-container"></div>
+                                Our Services
+                            </a>
+                            <a href="team.html">
+                                <div class="nav-container"></div>
+                                Our Team
+                            </a>
+                            <a href="contact.html">
+                                <div class="nav-container"></div>
+                                Contact Us
+                            </a>
+                        </ul>
+                         
+                    </nav>
+                </div>
+            </div>
+            <div class="header-container">
+                <div class="header-background"></div>
+            </div>
+        
+        </header>
+
+    
+    <main>
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="founder.jpeg" alt="Meesala Durga Prasad">
+                    <p style="color: #e74c3c; font-size: 24px; font-weight: 600;">Meesala Durga Prasad</p>
+                    <span style="font-size: 18px;">Founder</span>
+                </div>
+                <div class="team-member">
+                    <img src="cofounder.jpeg" alt="Velupala Sravani">
+                    <p style="color: #e74c3c; font-size: 24px; font-weight: 600;">Velupala Sravani</p>
+                    <span style="font-size: 18px;">Co-founder</span>
+                </div>
+                <div class="team-member">
+                    <img src="coo.jpeg" alt="Dada Khalandar">
+                    <p style="color: #e74c3c; font-size: 24px; font-weight: 600;">Dada Khalandar</p>
+                    <span style="font-size: 18px;">Chief Operating Officer</span>
+                </div>
+                <div class="team-member">
+                    <img src="dlfs.jpeg" alt="Damavarapu Kanchana">
+                    <p style="color: #e74c3c; font-size: 24px; font-weight: 600;">Damavarapu Kanchana</p>
+                    <span style="font-size: 18px;">Digital Lending and Finance Services</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rest of your body content -->
+
+   
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-links">
+                <a href="index.html">Home</a> |
+                <a href="about.html">About Us</a> |
+                <a href="services.html">Our Services</a> |
+                <a href="team.html">Our Team</a> |
+                <a href="contact.html">Contact Us</a>
+            </p>
+            <p class="footer-address">
+                1-1, PLN Complex, Opp: Appex Construction, Bellary Bypass, Ananthapur, Andhrapradhesh, Pincode: 515004
+            </p>
+            <!-- Social Media Links (in footer) -->
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100091757307005&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/p/Cs7wDw6yycQ/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/nedos-agrotech-private-limited/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="footer-copyright">
+                © 2023 Nedos Agrotech Pvt Ltd. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script>
+    // JavaScript to toggle mobile menu
+    document.addEventListener("DOMContentLoaded", () => {
+        const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
+        const navLinks = document.querySelector(".nav-links");
+    
+        mobileMenuIcon.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = document.querySelectorAll(".nav-links li");
+        mobileNavLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("show");
+            });
+        });
+    });
+</script>
+    
+</body>
+
+</html>
